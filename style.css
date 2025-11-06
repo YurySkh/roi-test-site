@@ -1,0 +1,20 @@
+body {
+	background-color: #f0f0f0; 
+	font-size: 20px; 
+	margin: 0; 
+	height: 100vh; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	gap: 2em;
+} 
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+} 
+
+a:hover {
+	background-color: #e2e2e2;
+}
