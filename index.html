@@ -1,49 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Roi-Test-Site-main</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<button id='btn4Event'>JS-Event</button>
-	<p> Связь через Почту: 
-		<a href="mailto:sukhanov.yu@roistat.com">sukhanov.yu@roistat.com</a>
-	</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roi-Test-Site-main</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="btn4Event">JS-Event</button>
+    <p>
+      Связь через Почту:
+      <a href="mailto:sukhanov.yu@roistat.com">sukhanov.yu@roistat.com</a>
+    </p>
 
-	<p> Связь через Звонок: 
-		<a href="tel:+79819999999">+79819999999</a>
-	</p>
+    <p>
+      Связь через Звонок:
+      <a href="tel:+79819999999">+79819999999</a>
+    </p>
 
-	<form id="form-site" action="#" method="post" novalidate>
-  <div>
-    <label for="name">Имя</label><br />
-    <input id="name" name="Name" type="text" required placeholder="Ваше имя" />
-  </div>
+    <form id="form-site" action="#" method="post" novalidate>
+      <div>
+        <label for="name">Имя</label><br />
+        <input
+          id="name"
+          name="Name"
+          type="text"
+          required
+          placeholder="Ваше имя"
+        />
+      </div>
 
-  <div style="margin-top:8px;">
-    <label for="email">Электронная почта</label><br />
-    <input id="email" name="Email" type="email" required placeholder="you@example.com" />
-  </div>
+      <div style="margin-top: 8px">
+        <label for="email">Электронная почта</label><br />
+        <input
+          id="email"
+          name="Email"
+          type="email"
+          required
+          placeholder="you@example.com"
+        />
+      </div>
 
-  <div style="margin-top:12px;">
-    <button type="submit">Отправить</button>
-  </div>
-</form>
+      <div style="margin-top: 12px">
+        <button type="submit">Отправить</button>
+      </div>
+    </form>
 
-<!-- Roistat Counter Start -->
-<script>
-(function(w, d, s, h, id) {
-    w.roistatProjectId = id; w.roistatHost = h;
-    var p = d.location.protocol == "https:" ? "https://" : "http://";
-    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
-    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-})(window, document, 'script', 'cloud.roistat.com', 'c8f774ee14bb5520ec942ef9a1f49a13');
-</script>
-<!-- Roistat Counter End -->
+    <!-- Inline frame widget Sekundomer.net -->
+    <iframe
+      style="width: 100%; height: 254px; border-radius: 0"
+      src="//sekundomer.net/?widget=true&name=&bg=1d4671&bgBody=e8e8e8&colorH1=595959&pattern=none&cr=show&nb=show"
+      frameborder="0"
+    ></iframe>
 
-	<script defer src='script.js'></script>
+    <!-- Roistat Counter Start -->
+    <script>
+      (function (w, d, s, h, id) {
+        w.roistatProjectId = id;
+        w.roistatHost = h;
+        var p = d.location.protocol == "https:" ? "https://" : "http://";
+        var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie)
+          ? "/dist/module.js"
+          : "/api/site/1.0/" +
+            id +
+            "/init?referrer=" +
+            encodeURIComponent(d.location.href);
+        var js = d.createElement(s);
+        js.charset = "UTF-8";
+        js.async = 1;
+        js.src = p + h + u;
+        var js2 = d.getElementsByTagName(s)[0];
+        js2.parentNode.insertBefore(js, js2);
+      })(
+        window,
+        document,
+        "script",
+        "cloud.roistat.com",
+        "c8f774ee14bb5520ec942ef9a1f49a13"
+      );
+    </script>
+    <!-- Roistat Counter End -->
 
-</body>
+    <script defer src="script.js"></script>
+  </body>
 </html>
